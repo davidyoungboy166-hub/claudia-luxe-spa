@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cashmere: #F4EDE4;
+    --color-espresso: #35251F;
+    --color-espresso-dark: #2B1D19;
+    --color-rosegold: #B98578;
+    --color-rosegold-light: #D4A99E;
+    --color-rosegold-hover: #A36F62;
+    --color-ivory: #FFFCF7;
+    --color-richbrown: #5B4940;
+    --color-warmbeige: #E4D6C9;
+  }
+}
+
+@theme {
+  --color-cashmere: #F4EDE4;
+  --color-espresso: #35251F;
+  --color-espresso-dark: #2B1D19;
+  --color-rosegold: #B98578;
+  --color-rosegold-light: #D4A99E;
+  --color-rosegold-hover: #A36F62;
+  --color-ivory: #FFFCF7;
+  --color-richbrown: #5B4940;
+  --color-warmbeige: #E4D6C9;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFFCF7;
+  color: #5B4940;
+  font-family: var(--font-sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif, "Playfair Display", "Cormorant Garamond", Georgia, serif);
+  letter-spacing: -0.01em;
+}
+
+/* Explicit color classes to guarantee availability */
+.bg-cashmere { background-color: #F4EDE4; }
+.bg-espresso { background-color: #35251F; }
+.bg-espresso-dark { background-color: #2B1D19; }
+.bg-rosegold { background-color: #B98578; }
+.bg-rosegold-light { background-color: #D4A99E; }
+.bg-ivory { background-color: #FFFCF7; }
+.bg-warmbeige { background-color: #E4D6C9; }
+
+.text-cashmere { color: #F4EDE4; }
+.text-espresso { color: #35251F; }
+.text-espresso-dark { color: #2B1D19; }
+.text-rosegold { color: #B98578; }
+.text-rosegold-light { color: #D4A99E; }
+.text-ivory { color: #FFFCF7; }
+.text-richbrown { color: #5B4940; }
+.text-warmbeige { color: #E4D6C9; }
+
+.border-warmbeige { border-color: #E4D6C9; }
+.border-rosegold { border-color: #B98578; }
+.border-espresso { border-color: #35251F; }
+.border-cashmere { border-color: #F4EDE4; }
+
+/* Subtle luxury glow effect */
+.glow-rosegold {
+  box-shadow: 0 10px 30px -10px rgba(185, 133, 120, 0.25);
+}
+
+.glow-rosegold-lg {
+  box-shadow: 0 20px 40px -15px rgba(185, 133, 120, 0.35);
+}
+
+/* Luxury Easing Curves */
+.ease-editorial {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Cross-browser Safari / iOS Glass Backdrop Blur Support */
+.backdrop-blur-glass {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+/* Lenis Smooth Scroll Configuration */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
