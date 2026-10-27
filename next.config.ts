@@ -6,13 +6,16 @@ if (isGithubActions && process.env.GITHUB_REPOSITORY) {
   repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
 }
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || (repo ? `/${repo}` : "");
+const basePath = process.env.NODE_ENV === 'production' ? '/claudia-luxe-spa' : (process.env.NEXT_PUBLIC_BASE_PATH || (repo ? `/${repo}` : ""));
 
 const nextConfig: NextConfig = {
   output: "export",
   basePath: basePath || undefined,
   assetPrefix: basePath || undefined,
   trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
     remotePatterns: [

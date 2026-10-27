@@ -59,7 +59,7 @@ export default function About() {
                 <FloatingParallax speed={18} direction="down" className="w-full relative z-10">
                   <ParallaxImage className="aspect-[4/5] rounded-2xl shadow-xl border border-[#E4D6C9] bg-[#F4EDE4]">
                     <Image
-                      src="/images/about-primary.jpg"
+                      src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/images/about-primary.jpg"}
                       alt="Aesthetic spa essentials with organic oils and botanical petals at Claudia Luxe Beauty Spa"
                       fill
                       className="object-cover"
@@ -77,7 +77,7 @@ export default function About() {
                   <div className="w-full h-full rounded-xl overflow-hidden shadow-2xl border-4 border-[#FFFCF7] bg-[#F4EDE4]">
                     <ParallaxImage className="w-full h-full">
                       <Image
-                        src="/images/about-secondary.jpg"
+                        src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/images/about-secondary.jpg"}
                         alt="Candlelit aromatherapy relaxation corner"
                         fill
                         className="object-cover"

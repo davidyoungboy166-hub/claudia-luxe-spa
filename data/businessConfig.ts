@@ -112,7 +112,7 @@ export const businessConfig: BusinessConfig = {
       description:
         "Customized deep pore cleansing, botanical enzyme exfoliation, targeted luxury serums, and sculpting lymphatic massage that unveil your skin’s luminous vitality.",
       duration: "60 – 90 Minutes",
-      image: "/images/service-facials.jpg",
+      image: (process.env.NEXT_PUBLIC_BASE_PATH || "") + "/images/service-facials.jpg",
       imageAlt: "Client enjoying a gentle, radiant facial treatment at Claudia Luxe Beauty Spa",
       highlights: [
         "Deep Enzyme Cleansing",
@@ -128,7 +128,7 @@ export const businessConfig: BusinessConfig = {
       description:
         "A deeply restorative ritual combining warmed botanical oils, smooth heated basalt stones, and rhythmic therapeutic pressure to dissolve stress and quiet the mind.",
       duration: "60 – 90 Minutes",
-      image: "/images/service-massage.jpg",
+      image: (process.env.NEXT_PUBLIC_BASE_PATH || "") + "/images/service-massage.jpg",
       imageAlt: "Therapeutic hot stone massage relaxation treatment with warm aromatic oils",
       highlights: [
         "Warmed Organic Botanicals",
@@ -144,7 +144,7 @@ export const businessConfig: BusinessConfig = {
       description:
         "Indulgent hand and foot care rituals featuring dead sea salt exfoliation, deep paraffin moisture wraps, meticulous shaping, and non-toxic high-gloss polish.",
       duration: "45 – 75 Minutes",
-      image: "/images/service-nails.jpg",
+      image: (process.env.NEXT_PUBLIC_BASE_PATH || "") + "/images/service-nails.jpg",
       imageAlt: "Artisan luxury manicure and conditioning treatment with rose gold accents",
       highlights: [
         "Rosehip & Sugar Exfoliation",
@@ -160,7 +160,7 @@ export const businessConfig: BusinessConfig = {
       description:
         "Invigorating full-body polishes with mineral-rich scrubs followed by hydrating botanical wraps and rich whipped body soufflés that leave your skin silky and refreshed.",
       duration: "75 – 100 Minutes",
-      image: "/images/service-body.jpg",
+      image: (process.env.NEXT_PUBLIC_BASE_PATH || "") + "/images/service-body.jpg",
       imageAlt: "Exfoliating botanical body scrub and detoxification treatment",
       highlights: [
         "Himalayan Mineral Polish",

@@ -127,7 +127,7 @@ export default function Hero() {
                 {/* Main Image Container with Inner Parallax / Slow Zoom-Out */}
                 <ParallaxImage className="rounded-2xl shadow-2xl bg-[#F4EDE4] aspect-[4/5] border border-[#E4D6C9]">
                   <Image
-                    src="/images/hero.jpg"
+                    src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/images/hero.jpg"}
                     alt="Luxury serene wellness treatment room at Claudia Luxe Beauty Spa with warm candlelight and fresh towels"
                     fill
                     priority

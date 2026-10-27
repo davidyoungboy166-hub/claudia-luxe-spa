@@ -4,47 +4,48 @@ import ScrollReveal from "./ScrollReveal";
 import ParallaxImage from "./ParallaxImage";
 
 export default function Gallery() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const galleryItems = [
     {
       id: "gal-1",
       title: "Tranquil Treatment Sanctuary",
       category: "Suite Interior",
-      image: "/images/gallery-1.jpg",
+      image: `${basePath}/images/gallery-1.jpg`,
       alt: "Serene private spa treatment room with soft warm illumination and treatment table",
     },
     {
       id: "gal-2",
       title: "Handcrafted Organic Botanicals",
       category: "Aromatherapy",
-      image: "/images/gallery-3.jpg",
+      image: `${basePath}/images/gallery-3.jpg`,
       alt: "Aromatherapy essential oils and candlelit spa ambiance with fresh florals",
     },
     {
       id: "gal-3",
       title: "Cellular Facial Renewal",
       category: "Skincare",
-      image: "/images/gallery-4.jpg",
+      image: `${basePath}/images/gallery-4.jpg`,
       alt: "Client experiencing luxury relaxing facial skincare therapy",
     },
     {
       id: "gal-4",
       title: "Heated Basalt Stone Alignment",
       category: "Bodywork",
-      image: "/images/gallery-5.jpg",
+      image: `${basePath}/images/gallery-5.jpg`,
       alt: "Hot basalt stones and soothing massage treatment",
     },
     {
       id: "gal-5",
       title: "Artisan Manicure & Pedicure Lounge",
       category: "Nail Care",
-      image: "/images/gallery-2.jpg",
+      image: `${basePath}/images/gallery-2.jpg`,
       alt: "Luxury rose gold manicure lounge setup with premium grooming essentials",
     },
     {
       id: "gal-6",
       title: "Mineral Salt & Herbal Infusions",
       category: "Rituals",
-      image: "/images/gallery-6.jpg",
+      image: `${basePath}/images/gallery-6.jpg`,
       alt: "Organic sea salts and restorative body scrub ingredients",
     },
   ];
