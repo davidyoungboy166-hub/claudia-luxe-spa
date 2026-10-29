@@ -65,14 +65,14 @@ export const businessConfig: BusinessConfig = {
   // =========================================================================
   contact: {
     // WhatsApp number for click-to-chat. Must contain ONLY digits with country code.
-    whatsappNumber: "233256283126",
+    whatsappNumber: "233209734343",
 
     // Formatted WhatsApp number displayed to visitors
-    whatsappDisplay: "+233 25 628 3126 (0256283126)",
+    whatsappDisplay: "+233 20 973 4343 (0209734343)",
 
     // Direct phone number
-    phoneDisplay: "+233 25 628 3126 (0256283126)",
-    phoneTel: "+233256283126",
+    phoneDisplay: "+233 20 973 4343 (0209734343)",
+    phoneTel: "+233209734343",
 
     // Official email address
     email: "concierge@claudialuxespa.com",

@@ -232,7 +232,7 @@ export default function BookingSection({
                         setErrors((prev) => ({ ...prev, phone: "" }));
                       }
                     }}
-                    placeholder="e.g. +233 25 628 3126"
+                    placeholder="e.g. +233 20 973 4343"
                     className={`w-full px-4 py-3 min-h-[48px] rounded-xl bg-[#FFFCF7] border ${
                       errors.phone ? "border-red-400" : "border-[#E4D6C9]"
                     } text-[#35251F] placeholder-[#5B4940]/50 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#B98578] transition-all`}
